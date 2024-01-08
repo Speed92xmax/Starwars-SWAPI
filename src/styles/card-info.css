@@ -1,0 +1,24 @@
+.bg-cardinfo-characters {
+    background-image: url("../assets/cardInfo_characters.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-cardinfo-planets {
+    background-image: url("../assets/cardinfo_planets.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-cardinfo-vehicles {
+    background-image: url("../assets/cardInfo_vehicles.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+.slick-slide>div {
+    margin: 0 1rem;
+}

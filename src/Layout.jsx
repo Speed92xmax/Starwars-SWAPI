@@ -1,18 +1,23 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
-import CustomHooks from "./views/CustomHooks";
 import ContextProvider, { Context } from "./store/contextProvider";
+import { PrimeReactProvider } from "primereact/api";
+import Navbar from "./components/Navbar.jsx";
+import Details from "./views/Details.jsx";
 const Layout = () => {
   return (
-    <ContextProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hooks" element={<CustomHooks />} />
-        </Routes>
-      </BrowserRouter>
-    </ContextProvider>
+    <PrimeReactProvider>
+      <ContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/details/:keySearch/:id/:uid" element={<Details />} />
+          </Routes>
+        </BrowserRouter>
+      </ContextProvider>
+    </PrimeReactProvider>
   );
 };
 

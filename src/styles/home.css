@@ -1,0 +1,10 @@
+.bg-image{
+    background-image: url("../assets/bg-stars.png");
+    background-repeat: repeat;
+    background-size: fill;
+}
+.bg-image-hero{
+    background-image: url('../assets/Hero.png');
+    background-size: cover;
+    background-position: center;
+}

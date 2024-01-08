@@ -4,7 +4,6 @@ import "./index.css";
 import Layout from "./Layout";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <BasicRouting /> */}
     <Layout />
   </React.StrictMode>
 );

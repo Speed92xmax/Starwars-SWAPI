@@ -17,7 +17,9 @@ const ContextProvider = ({ children }) => {
   );
 
   useEffect(() => {
-    // Initial fetch
+    state.actions.getSearch(state.store.apiUrl, "people");
+    state.actions.getSearch(state.store.apiUrl, "vehicles");
+    state.actions.getSearch(state.store.apiUrl, "planets");
   }, []);
 
   return <Context.Provider value={state}>{children}</Context.Provider>;

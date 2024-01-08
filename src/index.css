@@ -1,29 +1,74 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.flex {
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 0 5%;
 }
 
-.flex-center {
-  align-items: center;
-  justify-content: center;
+.container-fluid {
+  width: 100%;
+  max-width: 1900px;
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  color: aliceblue;
 }
+
+/* CUSTOM STYLES PRIME */
+
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+  color: white !important; 
+}
+
+.bg-black-custom {
+  background-color: #111111 !important
+}
+
+.bg-yellow-custom {
+  background-color: #FADE4B !important;
+}
+
+.p-button {
+  border: solid 2px #FADE4B
+}
+
+.p-badge {
+  color: white;
+  background-color: black;
+
+}
+
+.p-avatar.p-avatar-circle img{
+  object-fit: cover;
+  object-position: top;
+}
+
+.p-card .p-card-content{
+  padding: 0
+}
+
+.p-card .p-card-body{
+  padding: 1rem;
+}
+
+.img-fit{
+  object-fit: cover;
+  object-position: top;
+}
+
